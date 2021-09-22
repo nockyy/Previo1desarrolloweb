@@ -1,0 +1,108 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Formulario de afiliación</title>
+    <link rel="stylesheet"
+        href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css"
+        integrity="sha512-1ycn6IcaQQ40/MKBW2W4Rhis/DbILU74C1vSrLJxCq57o941Ym01SwNsOMqvEBFlcgUa6xLiPY/NS5R+E6ztJQ=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.0/dist/css/bootstrap.min.css"
+        rel="stylesheet"
+        integrity="sha384-KyZXEAg3QhqLMpG8r+8fhAXLRk2vvoC2f3B09zVXn8CA5QIVfZOJ3BCsw2P0p/We"
+        crossorigin="anonymous">
+    <link rel="stylesheet" href="styles.css">
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.0/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-U1DAWAznBHeqEIlVSCgzq+c9gqGAJn5c/t99JyeKa9xxaYpSvHU5awsuZVVFIhvj"
+        crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+    <script src="script.js"></script>
+</head>
+
+<body>
+    <form action="formdos.html" id="formulario" method="GET"
+        class="row flex justify-center items-center">
+        <div class="card2">
+            <div>
+                <p class="titleWeb"><b>Web</b>Developer</p>
+            </div>
+            <div class="w-30 card">
+                <div class="row">
+                    <h1 class="title">formulario de afiliación</h1>
+                </div>
+                <div class="input-group d-flex mb-3">
+                    <input type="text" class="form-control order-2" name="name" id="name"
+                        placeholder="Nombre completo">
+                    <span class="input-group-text order-2"><i class="fas fa-user"></i></span>
+                    <span class="focus-border"><i></i></span>
+                    <div class="invalid-feedback order-3"></div>
+                </div>
+                <div class="input-group d-flex mb-3">
+                    <input type="email" class="form-control order-2" name="email" id="email"
+                        placeholder="Email">
+                    <span class="input-group-text order-2"><i class="fas fa-envelope"></i></span>
+                    <span class="focus-border"><i></i></span>
+                    <div class="invalid-feedback order-3"></div>
+                </div>
+                <div class="input-group d-flex  mb-3">
+                    <input type="text" class="form-control order-2" name="telefono" id="telefono"
+                        placeholder="text">
+                    <span class="input-group-text order-2"><i class="fas fa-phone"></i></span>
+                    <span class="focus-border"><i></i></span>
+                    <div class="invalid-feedback order-3"></div>
+                </div>
+                <div class="input-group d-flex  mb-3">
+                    <input type="text" class="form-control order-2" id="gusto">
+                    <span class="order-2">
+                        <button class="button" id="btn-gustos">Gustos</button>
+                    </span>
+                </div>
+                <div class="row border row-gustos">
+                    <div class="col mb-1" style="width: 5%;">
+                        <span class="input-group-text order-2 flag-div"><i
+                                class="fas fa-flag"></i></span>
+                    </div>
+                    <div class="col border" style="width: 30%;">
+                        <table class="table-header" id="head-gusto">
+                            <tr>
+                                <th>Gusto</th>
+                            </tr>
+                        </table>
+                    </div>
+                    <div class="col border" style="width: 10%;">
+                        <table class="table-header" id="head-prtg">
+                            <tr>
+                                <th>%</th>
+                            </tr>
+                        </table>
+                    </div>
+                    <div class="col border" style="width: 20%;">
+                        <table class="table-header" id="head-edit">
+                            <tr>
+                                <th>edit</th>
+                            </tr>
+                        </table>
+                    </div>
+                </div>
+
+                <br>
+                <div id="simple">
+                    <p>Pulse aceptar para guardar los cambios o cancelar para anularlos</p>
+
+                    <button role="link" class="btn1" id="boton1">Aceptar</button>
+
+                    <button class="btn2" id="boton2">Cancelar</button>
+
+                </div>
+                <div class="web-link mb-2">
+                    <a href="">Ir a sitio de pag. Web</a>
+                </div>
+            </div>
+        </div>
+    </form>
+</body>
+
+</html>
